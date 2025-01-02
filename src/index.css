@@ -1,0 +1,28 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.prime-line-divider {
+  opacity: 0.6;
+  background-image: radial-gradient(circle, #e18b3fcc, #e18b3f33);
+  width: 100%;
+  height: 1px;
+  margin-bottom: 2rem;
+}
+.text-prime-liner {
+  background-image: linear-gradient(90deg, #e18b3f, #e18b3f);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.top {
+  background-image: linear-gradient(0deg, #10101000, #000000);
+}
