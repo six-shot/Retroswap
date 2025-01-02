@@ -14,7 +14,7 @@ export default function Hero() {
       <Navbar />
 
       <img
-        className=" absolute w-[32rem] top-[-10rem] rotate-[12deg] right-[-3rem]"
+        className=" absolute md:w-[32rem] w-[90vw] top-[-10rem] rotate-[12deg] right-[-11rem] md:right-[-3rem]"
         src={coin2}
       />
       <div className="pt-[87px] flex flex-col items-center">
@@ -31,8 +31,8 @@ export default function Hero() {
               </div>
               <h5>Powered by Tor & Haveno</h5>
             </div>
-            <h1 className="text-[5rem] font-medium leading-[1.2] text-white">
-              Buy & Sell Monero
+            <h1 className="md:text-[5rem] text-[3rem] font-medium leading-[1.2] text-white text-center">
+              Buy & Sell <br className="md:hidden flex" /> Monero
             </h1>
             <p className="text-[#c2c2c2] leading-[1.6] tracking-[-.02rem] text-[#fff9]">
               Cash. Crypto. P2P.
@@ -41,27 +41,27 @@ export default function Hero() {
           <button className="h-[58px] bg-white px-[2.75rem] rounded-[6rem] shadow-[0_0_50px_6px_#ffb876b3] text-[.875rem] font-medium text-black">
             Download Client
           </button>
-          <div className="mt-[7.25rem]" />{" "}
+          <div className="md:mt-[7.25rem] mt-[4rem]" />{" "}
         </div>
         <div className="relative rounded-[1.125rem]">
-          <div className="absolute inset-0 rounded-[1.125rem] z-[3] backdrop-blur-[64px]"></div>
+          <div className="absolute inset-0 rounded-[1.125rem] z-[3] backdrop-blur-[64px] md:ml-0 ml-[3rem]"></div>
           <img
-            className="w-[1120px] relative z-[3] rounded-[1.125rem]"
+            className="md:w-[1120px] w-[40rem] md:ml-0 ml-[3rem] relative z-[3] rounded-[1.125rem]"
             src={dashboard}
             alt="dashboard"
           />
           <img
-            className="absolute w-[27.5rem] rotate-[12rem] top-[-5rem] left-[-18rem]"
+            className="absolute md:w-[27.5rem] w-[70vw] rotate-[12rem] top-[10vw] md:top-[-5rem] md:left-[-18rem] left-[-26vw]"
             src={coin1}
             alt="coin1"
           />
           <img
-            className="absolute w-[16.25rem] top-[40%] left-[-5rem] z-[4] backdrop-blur-[64px]"
+            className="absolute md:w-[16.25rem] w-[9.25rem] md:top-[40%] top-[30%] md:left-[-5rem] left-0 z-[4] backdrop-blur-[64px]"
             src={cardbody}
             alt="coin1"
           />
           <img
-            className="absolute w-[11.25rem] top-[15%] right-[-3rem] z-[4] backdrop-blur-[64px]"
+            className="md:flex hidden absolute w-[11.25rem] top-[15%] right-[-3rem] z-[4] backdrop-blur-[64px]"
             src={cardright}
             alt="coin1"
           />
@@ -74,8 +74,8 @@ export default function Hero() {
       </div>
       <div className="max-w-[1440px] mx-auto px-[2.5rem]">
         <div className="prime-line-divider mt-20"></div>
-        <div class="grid gap-x-[3.25rem] gap-y-[3.25rem] grid-rows-auto grid-cols-[0.8fr,1fr,1fr,1fr] auto-cols-fr">
-          <div className="flex gap-[.375rem] flex-col">
+        <div class="grid gap-x-[3.25rem] gap-y-[3.25rem] grid-rows-auto grid-cols-1 md:grid-cols-[0.8fr,1fr,1fr,1fr] auto-cols-fr ">
+          <div className="flex gap-[.375rem] flex-col items-center md:items-start text-center">
             <h4 className="text-[1.125rem] font-semibold text-prime-liner leading-[1.4]">
               No Fees
             </h4>
@@ -83,7 +83,7 @@ export default function Hero() {
               RetoSwap does not take any trade fee.
             </p>
           </div>
-          <div className="flex gap-[.375rem] flex-col">
+          <div className="flex gap-[.375rem] flex-col items-center md:items-start text-center">
             <h4 className="text-[1.125rem] font-semibold text-prime-liner leading-[1.4]">
               Enhanced Privacy
             </h4>
@@ -91,7 +91,7 @@ export default function Hero() {
               Privacy with every transaction. Thanks to Monero & Tor.
             </p>
           </div>
-          <div className="flex gap-[.375rem] flex-col">
+          <div className="flex gap-[.375rem] flex-col items-center md:items-start text-center">
             <h4 className="text-[1.125rem] font-semibold text-prime-liner leading-[1.4]">
               User-Controlled Funds
             </h4>
@@ -100,7 +100,7 @@ export default function Hero() {
               funds.
             </p>
           </div>
-          <div className="flex gap-[.375rem] flex-col">
+          <div className="flex gap-[.375rem] flex-col items-center md:items-start text-center">
             <h4 className="text-[1.125rem] font-semibold text-prime-liner leading-[1.4]">
               Decentralized Networks
             </h4>

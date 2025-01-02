@@ -17,7 +17,7 @@ export default function Community() {
         src={blur}
         alt="blur"
       />
-      <div className="grid grid-cols-2 gap-[2.5rem]  ">
+      <div className="grid md:grid-cols-2 grid-cols-1 gap-[2.5rem]  ">
         <div className="2xl:max-w-[1440px] 2xl:mx-auto px-[2.5rem]">
           <h2 className="text-[3.52rem] leading-[1.2] text-white mt-[5rem]">
             What the <br /> community <br /> says about us
