@@ -11,19 +11,62 @@ import xenu1 from "../../assets/xenu1.jpg";
 import untraceable2 from "../../assets/untraceable2.png";
 export default function Community() {
   return (
-    <div className="w-full h-[780px] relative bg-[#090909] overflow-hidden">
+    <div className="w-full md:h-[780px] h-[542px] relative bg-[#090909] overflow-hidden">
       <img
-        className="absolute w-[32rem] -bottom-[12rem] -left-[9rem]"
+        className="absolute md:w-[32rem] w-[24rem] md:-bottom-[12rem] top-[-10rem] md:-left-[9rem] -left-[15rem]"
         src={blur}
         alt="blur"
       />
       <div className="grid md:grid-cols-2 grid-cols-1 gap-[2.5rem]  ">
         <div className="2xl:max-w-[1440px] 2xl:mx-auto px-[2.5rem]">
-          <h2 className="text-[3.52rem] leading-[1.2] text-white mt-[5rem]">
-            What the <br /> community <br /> says about us
+          <h2 className="md:text-[3.52rem] text-[2.375rem] leading-[1.2] text-white mt-[5rem] md:text-left text-center">
+            What the <br className="md:flex hidden " /> community{" "}
+            <br className="md:flex hidden" /> says about us
           </h2>
         </div>
-        <div className="grid grid-cols-[324px_324px_324px] gap-[1rem] relative h-[750px]">
+      <div className="md:hidden flex gap-[1rem] px-[1rem] overflow-x-scroll w-[1000px]">
+          <div className="w-[324px]  bg-[#141414] rounded-[1.25rem] p-[2rem] border border-[#ffffff1f]  ">
+            <p className="text-[.875rem] text-[#c2c2c2]">
+              In a situation where the EU has declared war on anonymous
+              cryptocurrencies and all centralized exchanges have delisted
+              Monero from EU countries, haveno-reto is an absolutely crucial
+              tool to continue to trade Monero in a safe and trustworthy way.
+            </p>
+            <div className=" mt-[1rem] flex justify-between items-center">
+              <div className=" flex items-center gap-[.875rem] ">
+                <img className="w-[52px] rounded-full" src={pavol} alt="alt" />
+                <div className="flex flex-col text-[#c2c2c2]">
+                  <h5 className="text-[.875rem]">Pavol Lupták</h5>
+                  <h5 className="text-[.875rem]">Cryptoanarchist</h5>
+                </div>
+              </div>
+              <div className="w-[2.5rem] h-[2.5rem] bg-[#1d1d1d] border border-[#ffffff0d] rounded-full flex justify-center items-center">
+                <img src={twitter} alt="twitter" />
+              </div>
+            </div>
+          </div>
+          <div className="w-[324px]  bg-[#141414] rounded-[1.25rem] p-[2rem] border border-[#ffffff1f]  ">
+            <p className="text-[.875rem] text-[#c2c2c2]">
+              In a situation where the EU has declared war on anonymous
+              cryptocurrencies and all centralized exchanges have delisted
+              Monero from EU countries, haveno-reto is an absolutely crucial
+              tool to continue to trade Monero in a safe and trustworthy way.
+            </p>
+            <div className=" mt-[1rem] flex justify-between items-center">
+              <div className=" flex items-center gap-[.875rem] ">
+                <img className="w-[52px] rounded-full" src={pavol} alt="alt" />
+                <div className="flex flex-col text-[#c2c2c2]">
+                  <h5 className="text-[.875rem]">Pavol Lupták</h5>
+                  <h5 className="text-[.875rem]">Cryptoanarchist</h5>
+                </div>
+              </div>
+              <div className="w-[2.5rem] h-[2.5rem] bg-[#1d1d1d] border border-[#ffffff0d] rounded-full flex justify-center items-center">
+                <img src={twitter} alt="twitter" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="md:grid hidden  grid-cols-[324px_324px_324px] gap-[1rem] relative h-[750px]">
           <div className="absolute z-[4] -top-10 w-full h-[6.25rem] top"></div>
 
           <div className="absolute -bottom-10 w-full h-[6.25rem] bg-gradient-to-b from-[#10101000] to-[#000000]"></div>

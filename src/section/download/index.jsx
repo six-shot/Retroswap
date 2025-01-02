@@ -12,9 +12,9 @@ export default function Download() {
   ];
 
   return (
-    <div className="pt-[164px] max-w-[1440px] mx-auto px-[2.5rem]">
+    <div className="pt-[164px] max-w-[1440px] mx-auto md:px-[2.5rem] px-[1rem]">
       <div className="flex flex-col justify-center items-center text-center">
-        <h2 className="text-[3.125rem] leading-[1.2] text-white">
+        <h2 className="md:text-[3.125rem] text-[2.375rem] leading-[1.2] text-white">
           Download RetoSwap <br /> for your platform
         </h2>
         <p className="text-[#c2c2c2] leading-[1.6] tracking-[-.02rem] max-w-[32rem] mt-[1rem]">
@@ -22,7 +22,7 @@ export default function Download() {
           RetoSwap to start exchanging p2p.
         </p>
       </div>
-      <div className="grid grid-cols-4 gap-[1rem] mt-[2.5rem]">
+      <div className="grid md:grid-cols-4 grid-cols-1 gap-[1rem] mt-[2.5rem]">
         {cards.map((card, index) => (
           <div
             key={index}
@@ -30,7 +30,7 @@ export default function Download() {
             onMouseLeave={() => setHoveredIndex(null)}
             className="relative p-[1px] rounded-[1.25rem] overflow-hidden cursor-pointer"
           >
-            <div className="p-[1.5rem] bg-[#090909] rounded-[1.25rem] h-[17rem] relative z-[3] flex justify-between flex-col">
+            <div className="p-[1.5rem] bg-[#090909] rounded-[1.25rem] md:h-[17rem] md:gap-0 gap-[2rem] relative z-[3] flex justify-between flex-col">
               <div>
                 <div className="w-[3.75rem] h-[3.75rem] bg-[#141414] flex justify-center items-center rounded-full mb-[.875rem]">
                   <img src={card.icon} alt="Windows icon" />
