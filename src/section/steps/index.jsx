@@ -30,7 +30,7 @@ export default function Steps() {
     <div className="relative min-h-screen isolate max-w-[1440px] mx-auto mb-[164px] mt-[6.25rem] ">
       <div className="relative min-h-screen isolate flex">
         {/* Left Section */}
-        <div className="w-1/2 h-full text-white sticky top-0">
+        <div className="w-1/2 h-full text-white sticky top-[6.25rem]">
           <h2 className="text-[3.25rem] leading-[1.2]">
             Start Swapping in 3 <br /> Simple Steps
           </h2>
