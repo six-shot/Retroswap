@@ -13,7 +13,7 @@ import Footer from "./section/footer";
 
 function App() {
   return (
-    <div className="overflow-hidden">
+    <div className="">
       <Hero />
       <Features />
       <Coin />

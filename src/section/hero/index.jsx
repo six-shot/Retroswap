@@ -10,7 +10,7 @@ import cardright from "../../assets/CardBody1BlurEffects.png";
 import gradient from "../../assets/Gradient.avif";
 export default function Hero() {
   return (
-    <div className="relative w-full ">
+    <div className="relative w-full overflow-x-hidden">
       <Navbar />
 
       <img
@@ -102,7 +102,7 @@ export default function Hero() {
           </div>
           <div className="flex gap-[.375rem] flex-col">
             <h4 className="text-[1.125rem] font-semibold text-prime-liner leading-[1.4]">
-        Decentralized Networks
+              Decentralized Networks
             </h4>
             <p className="text-[.875rem] text-[#c2c2c2]">
               Exchange on a network that does not depend on central control.

@@ -4,7 +4,7 @@ import logo from "../../assets/logo.svg";
 
 export default function Footer() {
   return (
-    <div className="relative h-[300px]  ">
+    <div className="relative h-[300px]  mt-[164px]">
       <div className=" max-w-[1440px] mx-auto px-[2.75rem]">
         <div className="w-full max-w-[80rem] relative z-[10] ">
           <div className="pt-[6.25rem]" />
@@ -43,7 +43,7 @@ export default function Footer() {
       <div className="absolute bottom-0 w-full h-full z-[2] ">
         <img className="w-full h-full object-cover" src={footer} />
       </div>
-      <div className="absolute top-[5rem] w-full z-[1] overflow-hidden ">
+      <div className="absolute left-0 top-[5rem] w-full z-[1]   bg-red-500">
         <div className="footer-glow"></div>
       </div>
     </div>
