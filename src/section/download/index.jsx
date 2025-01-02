@@ -12,7 +12,7 @@ export default function Download() {
   ];
 
   return (
-    <div className="py-[164px] max-w-[1440px] mx-auto">
+    <div className="pt-[164px] max-w-[1440px] mx-auto">
       <div className="flex flex-col justify-center items-center text-center">
         <h2 className="text-[3.125rem] leading-[1.2] text-white">
           Download RetoSwap <br /> for your platform
