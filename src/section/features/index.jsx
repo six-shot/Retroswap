@@ -11,7 +11,7 @@ export default function Features() {
         RetoSwap — It doesn't get <br /> more private than that
       </h2>
       <div className="max-w-[1440px] mx-auto mt-[2.5rem]">
-        <div className="grid grid-cols-2 gap-[1rem] px-[5rem] ">
+        <div className="grid grid-cols-2 gap-[1rem] px-[2.5rem] ">
           <div className="w-full h-[480px] border border-[#ffffff1f] rounded-[1.5rem] relative overflow-hidden">
             <img
               src={card1}

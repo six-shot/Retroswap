@@ -27,7 +27,7 @@ const stepsData = [
 
 export default function Steps() {
   return (
-    <div className="relative min-h-screen isolate max-w-[1440px] mx-auto mb-[164px] mt-[6.25rem] ">
+    <div className="relative min-h-screen isolate max-w-[1440px] mx-auto mb-[164px] mt-[6.25rem] px-[2.5rem]">
       <div className="relative min-h-screen isolate flex">
         {/* Left Section */}
         <div className="w-1/2 h-full text-white sticky top-[6.25rem]">
