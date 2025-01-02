@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import card1 from "../../assets/Digital-flow-3.png";
 import card2 from "../../assets/Digital-flow-1.png";
 import card3 from "../../assets/Hands.png";
@@ -24,8 +24,9 @@ const stepsData = [
     img: card3,
   },
 ];
-
+  
 export default function Steps() {
+  const [hoveredIndex, setHoveredIndex] = useState(null);
   return (
     <div className="relative min-h-screen isolate max-w-[1440px] mx-auto mb-[164px] mt-[6.25rem] md:px-[2.5rem] px-[1rem]">
       <div className="relative min-h-screen isolate flex md:flex-row flex-col">
@@ -41,29 +42,39 @@ export default function Steps() {
 
         {/* Right Section */}
         <div className="md:w-1/2 w-full h-full flex flex-col gap-[1.5rem]">
-          {stepsData.map((step) => (
+          {stepsData.map((step, index) => (
             <div
-              key={step.id}
-              className="bg-black w-full h-[440px] border border-[#ffffff1f] rounded-[1.5rem] relative "
+              key={index}
+              onMouseEnter={() => setHoveredIndex(index)}
+              onMouseLeave={() => setHoveredIndex(null)}
+              className="relative p-[1px] overflow-hidden rounded-[1.5rem]"
             >
-              <img
-                src={step.img}
-                alt={step.title}
-                className="absolute top-0 left-0 w-full h-full object-cover rounded-[1.5rem]"
-              />
-              <div className="absolute inset-0 flex items-start w-full text-white p-[2rem]">
-                <div className="flex md:flex-row flex-col-reverse w-full justify-between items-start md:gap-0 gap-[1.5rem]">
-                  <div className="flex flex-col gap-[.75rem]">
-                    <h4 className="md:text-[2rem] text-[1.75rem] leading-[1.25]">{step.title}</h4>
-                    <p className="text-[#c2c2c2] text-[1rem] max-w-[20rem]">
-                      {step.description}
-                    </p>
-                  </div>
-                  <div className="md:w-[3.75rem] w-[2.75rem] h-[2.75rem] md:h-[3.75rem] bg-[#191919] border border-[#ffffff0d] flex justify-center items-center rounded-full">
-                    <h5 className="text-white">{`0${step.id}`}</h5>
+              <div className="bg-black w-full h-[440px] z-[3] rounded-[1.5rem] relative  ">
+                <img
+                  src={step.img}
+                  alt={step.title}
+                  className="absolute top-0 left-0 w-full h-full object-cover rounded-[1.5rem]"
+                />
+                <div className="absolute inset-0 flex items-start w-full text-white p-[2rem]">
+                  <div className="flex md:flex-row flex-col-reverse w-full justify-between items-start md:gap-0 gap-[1.5rem]">
+                    <div className="flex flex-col gap-[.75rem]">
+                      <h4 className="md:text-[2rem] text-[1.75rem] leading-[1.25]">
+                        {step.title}
+                      </h4>
+                      <p className="text-[#c2c2c2] text-[1rem] max-w-[20rem]">
+                        {step.description}
+                      </p>
+                    </div>
+                    <div className="md:w-[3.75rem] w-[2.75rem] h-[2.75rem] md:h-[3.75rem] bg-[#191919] border border-[#ffffff0d] flex justify-center items-center rounded-full">
+                      <h5 className="text-white">{`0${step.id}`}</h5>
+                    </div>
                   </div>
                 </div>
               </div>
+              <div className="stroke-rectangle absolute inset-0"></div>
+              {hoveredIndex === index && (
+                <div className="stroke-rectangle is-gradient"></div>
+              )}
             </div>
           ))}
         </div>

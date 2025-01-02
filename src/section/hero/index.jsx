@@ -75,7 +75,7 @@ export default function Hero() {
       <div className="max-w-[1440px] mx-auto px-[2.5rem]">
         <div className="prime-line-divider mt-20"></div>
         <div class="grid gap-x-[3.25rem] gap-y-[3.25rem] grid-rows-auto grid-cols-1 md:grid-cols-[0.8fr,1fr,1fr,1fr] auto-cols-fr ">
-          <div className="flex gap-[.375rem] flex-col items-center md:items-start text-center">
+          <div className="flex gap-[.375rem] flex-col items-center md:items-start md:text-left text-center">
             <h4 className="text-[1.125rem] font-semibold text-prime-liner leading-[1.4]">
               No Fees
             </h4>
@@ -83,7 +83,7 @@ export default function Hero() {
               RetoSwap does not take any trade fee.
             </p>
           </div>
-          <div className="flex gap-[.375rem] flex-col items-center md:items-start text-center">
+          <div className="flex gap-[.375rem] flex-col items-center md:items-start md:text-left text-center">
             <h4 className="text-[1.125rem] font-semibold text-prime-liner leading-[1.4]">
               Enhanced Privacy
             </h4>
@@ -91,7 +91,7 @@ export default function Hero() {
               Privacy with every transaction. Thanks to Monero & Tor.
             </p>
           </div>
-          <div className="flex gap-[.375rem] flex-col items-center md:items-start text-center">
+          <div className="flex gap-[.375rem] flex-col items-center md:items-start md:text-left text-center">
             <h4 className="text-[1.125rem] font-semibold text-prime-liner leading-[1.4]">
               User-Controlled Funds
             </h4>
@@ -100,7 +100,7 @@ export default function Hero() {
               funds.
             </p>
           </div>
-          <div className="flex gap-[.375rem] flex-col items-center md:items-start text-center">
+          <div className="flex gap-[.375rem] flex-col items-center md:items-start md:text-left text-center">
             <h4 className="text-[1.125rem] font-semibold text-prime-liner leading-[1.4]">
               Decentralized Networks
             </h4>
