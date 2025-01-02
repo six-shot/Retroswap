@@ -7,6 +7,7 @@ import Coin from './section/coin';
 import StickyCards from './section/steps';
 import Community from './section/community';
 import Download from './section/download';
+import Steps from './section/steps';
 
 function App() {
   return (
@@ -15,7 +16,7 @@ function App() {
     <Hero/>
     <Features/>
     <Coin/>
- 
+ <Steps/>
     <Community/>
     <Download/>
     </div>
