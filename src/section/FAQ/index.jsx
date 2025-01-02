@@ -13,8 +13,8 @@ const Accordion = ({ title, answer, index, hoveredIndex, setHoveredIndex }) => {
       <div className="stroke-rectangle absolute inset-0"></div>
       {isOpen && <div className="stroke-rectangle is-gradient"></div>}
       <div className="bg-[#141414] relative z-[10] rounded-[1.25rem] px-[1.5rem]">
-        <button className="flex justify-between w-full pt-[1.5rem]">
-          <span className="text-[1.5rem] leading-[1.55]">{title}</span>
+        <button className="flex justify-between items-center w-full pt-[1.5rem] text-left">
+          <span className="md:text-[1.5rem] text-[1.25rem] leading-[1.55]">{title}</span>
           <svg
             className="fill-[white] shrink-0"
             width="16"
@@ -99,18 +99,18 @@ const AccordionContainer = () => {
   ];
 
   return (
-    <div className="text-white px-[2.5rem]">
+    <div className="text-white md:px-[2.5rem] px-[1rem]">
       <div className="relative min-h-screen isolate max-w-[1440px] mx-auto mb-[164px] mt-[6.25rem]">
-        <div className="relative min-h-screen isolate flex">
+        <div className="relative min-h-screen isolate flex md:flex-row flex-col md:gap-0 gap-[2.5rem] ">
           {/* Left Section */}
-          <div className="w-1/2 h-full text-white sticky top-[6.25rem]">
-            <h2 className="text-[3.25rem] leading-[1.2]">
+          <div className="md:w-1/2 w-full h-full text-white md:sticky md:top-[6.25rem]">
+            <h2 className="md:text-[3.25rem] text-[2.375rem] leading-[1.2] md:text-left text-center ">
               Answers to the most <br /> frequent questions
             </h2>
           </div>
 
           {/* Right Section */}
-          <div className="w-1/2 h-full flex flex-col gap-[0.5rem]">
+          <div className="md:w-1/2 w-full h-full flex flex-col gap-[0.5rem]">
             {data.map((item, index) => (
               <Accordion
                 key={index}
