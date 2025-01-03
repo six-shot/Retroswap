@@ -17,7 +17,7 @@ export default function Hero() {
         className=" absolute md:w-[32rem] w-[90vw] top-[-10rem] rotate-[12deg] right-[-11rem] md:right-[-3rem]"
         src={coin2}
       />
-      <div className="pt-[87px] flex flex-col items-center">
+      <div className="md:pt-[87px] pt-[40px] flex flex-col items-center relative z-[1]">
         <div className="flex flex-col items-center gap-[2.5rem]">
           <div className="flex flex-col gap-[1rem] items-center">
             <div className="flex gap-[.3125rem] items-center text-[#a2a2a2] h-[41px] px-[1.25rem]  border border-[#ffffff1f] bg-[#0f0f0f] rounded-[6rem] text-sm">
