@@ -48,10 +48,12 @@ export default function Features() {
 
   return (
     <div className="mt-[164px]">
-      <h2 className="md:text-[3.25rem] text-[2.375rem] leading-[1.2] text-white text-center">
-        RetoSwap — It doesn't get <br className="md:flex hidden" /> more private
-        than that
-      </h2>
+      <div className="flex justify-center items-center">
+        <h2 className="md:text-[3.25rem] text-[2.375rem] leading-[1.2] text-white text-center md:max-w-[100%] max-w-[23rem] ">
+          RetoSwap — It doesn't get <br className="md:flex hidden" /> more
+          private than that
+        </h2>
+      </div>
       <div className="max-w-[1440px] mx-auto mt-[2.5rem]">
         <div className="grid md:grid-cols-2 grid-cols-1 gap-[1rem] md:px-[2.5rem] px-[1rem]">
           {cards.map((card, index) => (
