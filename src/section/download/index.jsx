@@ -16,7 +16,8 @@ export default function Download() {
       <div className="flex flex-col justify-center items-center text-center">
         <div className="md:max-w-[100%] max-w-[32.75rem]">
           <h2 className="md:text-[3.125rem] text-[2.375rem] leading-[1.2] text-white">
-            Download RetoSwap <br className="md:flex hidden" /> for your platform
+            Download RetoSwap <br className="md:flex hidden" /> for your
+            platform
           </h2>
         </div>
 
@@ -25,13 +26,13 @@ export default function Download() {
           RetoSwap to start exchanging p2p.
         </p>
       </div>
-      <div className="grid md:grid-cols-4 grid-cols-1 gap-[1rem] mt-[2.5rem]">
+      <div className="grid md:grid-cols-4 grid-cols-1 gap-[1rem] mt-[2.5rem] transition-all ease-linear duration-[250ms]">
         {cards.map((card, index) => (
           <div
             key={index}
             onMouseEnter={() => setHoveredIndex(index)}
             onMouseLeave={() => setHoveredIndex(null)}
-            className="relative p-[1px] rounded-[1.25rem] overflow-hidden cursor-pointer"
+            className="relative p-[1px] rounded-[1.25rem] overflow-hidden cursor-pointer "
           >
             <div className="p-[1.5rem] bg-[#090909] rounded-[1.25rem] md:h-[17rem] md:gap-0 gap-[2rem] relative z-[3] flex justify-between flex-col">
               <div>
@@ -42,13 +43,13 @@ export default function Download() {
                   {card.title}
                 </h5>
               </div>
-              <button className="w-full h-[43px] bg-[#ffffff1f] border border-[#ffffff0d] text-[.875rem] font-medium rounded-[6rem] text-white">
+              <button className="w-full h-[43px] bg-[#ffffff1f] hover:bg-[#ffffff3d] border border-[#ffffff0d] text-[.875rem] font-medium rounded-[6rem] text-white transition-all ease-linear duration-[250ms]">
                 Download
               </button>
             </div>
             <div className="stroke-rectangle absolute inset-0"></div>
             {hoveredIndex === index && (
-              <div className="stroke-rectangle is-gradient"></div>
+              <div className="stroke-rectangle is-gradient transition-all ease-linear duration-[250ms]"></div>
             )}
           </div>
         ))}

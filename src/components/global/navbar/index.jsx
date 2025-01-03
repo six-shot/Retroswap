@@ -15,7 +15,7 @@ export default function Navbar() {
           <h5>Download</h5>
           <h5>FAQ</h5>
         </nav>
-        <button className="bg-[#ffffff1f] backdrop-blur-[12px] text-white rounded-[6rem] h-[46px] px-[1.5rem] border border-[#ffffff1f] text-sm font-medium">
+        <button className="bg-[#ffffff1f] hover:bg-[#ffffff3d] backdrop-blur-[12px] text-white rounded-[6rem] h-[46px] px-[1.5rem] border border-[#ffffff1f] text-sm font-medium transition-all ease-linear duration-[250ms]">
           Download Client
         </button>
       </div>

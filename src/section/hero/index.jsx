@@ -73,7 +73,7 @@ export default function Hero() {
         </div>
       </div>
       <div className="max-w-[1440px] mx-auto px-[2.5rem]">
-        <div className="prime-line-divider mt-20"></div>
+        <div className="prime-line-divider mt-20 relative z-[1]"></div>
         <div class="grid gap-x-[3.25rem] gap-y-[3.25rem] grid-rows-auto grid-cols-1 md:grid-cols-[0.8fr,1fr,1fr,1fr] auto-cols-fr ">
           <div className="flex gap-[.375rem] flex-col items-center md:items-start md:text-left text-center">
             <h4 className="text-[1.125rem] font-semibold text-prime-liner leading-[1.4]">
