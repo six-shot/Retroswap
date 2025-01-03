@@ -38,7 +38,7 @@ export default function Hero() {
               Cash. Crypto. P2P.
             </p>
           </div>
-          <button className="h-[58px] bg-white px-[2.75rem] rounded-[6rem] shadow-[0_0_50px_6px_#ffb876b3] text-[.875rem] font-medium text-black">
+          <button className="h-[58px] bg-white hover:bg-[#f0f0f0] px-[2.75rem] rounded-[6rem] shadow-[0_0_50px_6px_#ffb876b3] hover:shadow-[0_2px_15px_6px_#ffb87666] text-[.875rem] font-medium text-black transition-all ease-linear duration-[250ms]">
             Download Client
           </button>
           <div className="md:mt-[4.25rem] mt-[4rem]" />{" "}

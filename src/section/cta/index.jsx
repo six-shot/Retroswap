@@ -13,9 +13,7 @@ export default function CTA() {
             Be the first to hear about the latest news, updates and important
             events in the RetoSwap ecosystem!
           </p>
-          <button className="h-[58px] bg-white rounded-[6rem] text-[.875rem] px-[2.75rem] font-medium shadow-[0_0_50px_6px_#ffb876b3]">
-            Connect
-          </button>
+                  <button className="h-[58px] bg-white hover:bg-[#f0f0f0] px-[2.75rem] rounded-[6rem] shadow-[0_0_50px_6px_#ffb876b3] hover:shadow-[0_2px_15px_6px_#ffb87666] text-[.875rem] font-medium text-black transition-all ease-linear duration-[250ms] mt-[1.5rem]">Connect</button>
         </div>
         <img
           className="absolute bottom-[-14rem] left-[-15rem] w-[40rem]"
