@@ -7,7 +7,7 @@ export default function Footer() {
   return (
     <div className=" ">
       <div className="relative md:h-[300px]  md:mt-[164px] ">
-        <div className=" max-w-[1440px] mx-auto px-[2.75rem]">
+        <div className=" max-w-[1440px] mx-auto md:px-[2.75rem] px-[1rem]">
           <div className="w-full max-w-[80rem] relative z-[10] ">
             <div className="pt-[6.25rem]" />
             <div>
