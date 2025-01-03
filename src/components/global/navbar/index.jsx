@@ -3,7 +3,7 @@ import logo from "../../../assets/logo.svg";
 
 export default function Navbar() {
   return (
-    <div className="max-w-[80rem] mx-auto relative z-[200] md:px-[2.5rem] px-[1rem]">
+    <div className="max-w-[1440px] mx-auto relative z-[200] md:px-[2.5rem] px-[1rem]">
       <div className="flex justify-between items-center  h-[86px]">
         <div className="w-[160px]">
           <img src={logo} alt="logo" />
