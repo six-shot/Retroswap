@@ -18,13 +18,15 @@ export default function Community() {
         alt="blur"
       />
       <div className="grid md:grid-cols-2 grid-cols-1 gap-[2.5rem]  ">
-        <div className="2xl:max-w-[1440px] 2xl:mx-auto px-[2.5rem]">
-          <h2 className="md:text-[3.52rem] text-[2.375rem] leading-[1.2] text-white mt-[5rem] md:text-left text-center">
-            What the <br className="md:flex hidden " /> community{" "}
-            <br className="md:flex hidden" /> says about us
-          </h2>
+        <div className="2xl:max-w-[1440px] 2xl:mx-auto px-[2.5rem] flex md:justify-start justify-center  items-center md:items-start flex-col">
+          <div className="md:max-w-[100%] max-w-[23.75rem]">
+            <h2 className="md:text-[3.52rem] text-[2.375rem] leading-[1.2] text-white mt-[5rem] md:text-left text-center">
+              What the <br className="md:flex hidden " /> community{" "}
+              <br className="md:flex hidden" /> says about us
+            </h2>
+          </div>
         </div>
-      <div className="md:hidden flex gap-[1rem] px-[1rem] overflow-x-scroll w-[1000px]">
+        <div className="md:hidden flex gap-[1rem] px-[1rem] overflow-x-scroll w-[1000px]">
           <div className="w-[324px]  bg-[#141414] rounded-[1.25rem] p-[2rem] border border-[#ffffff1f]  ">
             <p className="text-[.875rem] text-[#c2c2c2]">
               In a situation where the EU has declared war on anonymous

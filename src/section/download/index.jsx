@@ -14,9 +14,12 @@ export default function Download() {
   return (
     <div className="pt-[164px] max-w-[1440px] mx-auto md:px-[2.5rem] px-[1rem]">
       <div className="flex flex-col justify-center items-center text-center">
-        <h2 className="md:text-[3.125rem] text-[2.375rem] leading-[1.2] text-white">
-          Download RetoSwap <br /> for your platform
-        </h2>
+        <div className="md:max-w-[100%] max-w-[32.75rem]">
+          <h2 className="md:text-[3.125rem] text-[2.375rem] leading-[1.2] text-white">
+            Download RetoSwap <br className="md:flex hidden" /> for your platform
+          </h2>
+        </div>
+
         <p className="text-[#c2c2c2] leading-[1.6] tracking-[-.02rem] max-w-[32rem] mt-[1rem]">
           Choose the right version for your operating system and install
           RetoSwap to start exchanging p2p.
