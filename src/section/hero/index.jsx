@@ -41,7 +41,7 @@ export default function Hero() {
           <button className="h-[58px] bg-white px-[2.75rem] rounded-[6rem] shadow-[0_0_50px_6px_#ffb876b3] text-[.875rem] font-medium text-black">
             Download Client
           </button>
-          <div className="md:mt-[7.25rem] mt-[4rem]" />{" "}
+          <div className="md:mt-[4.25rem] mt-[4rem]" />{" "}
         </div>
         <div className="relative rounded-[1.125rem]">
           <div className="absolute inset-0 rounded-[1.125rem] z-[3] backdrop-blur-[64px] md:ml-0 ml-[3rem]"></div>

@@ -13,7 +13,7 @@ export default function Community() {
   return (
     <div className="w-full md:h-[780px] h-[542px] relative bg-[#090909] overflow-hidden">
       <img
-        className="absolute md:w-[32rem] w-[24rem] md:-bottom-[12rem] top-[-10rem] md:-left-[9rem] -left-[15rem]"
+        className="absolute md:w-[32rem] w-[24rem] md:-bottom-[12rem] bottom-[12rem] md:-left-[9rem] -left-[15rem]"
         src={blur}
         alt="blur"
       />
